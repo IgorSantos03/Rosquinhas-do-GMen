@@ -44,7 +44,8 @@
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
@@ -96,7 +97,8 @@
                         <div class="row justify-content-start">
                             <div class="col-lg-8">
                                 <p class="text-primary text-uppercase fw-bold mb-2">// Rosquinha do Men</p>
-                                <h1 class="display-1 text-light mb-4 animated slideInDown">Recheadíssima com doce de leite natural</h1>
+                                <h1 class="display-1 text-light mb-4 animated slideInDown">Recheadíssima com doce de
+                                    leite natural</h1>
                                 <a href="" class="btn btn-primary rounded-pill py-3 px-5">Saiba mais</a>
                             </div>
                         </div>
@@ -110,7 +112,8 @@
                         <div class="row justify-content-start">
                             <div class="col-lg-8">
                                 <p class="text-primary text-uppercase fw-bold mb-2">// Rosquinha do Men</p>
-                                <h1 class="display-1 text-light mb-4 animated slideInDown">Saborosíssima desde a primeira lambida</h1>
+                                <h1 class="display-1 text-light mb-4 animated slideInDown">Saborosíssima desde a
+                                    primeira lambida</h1>
                                 <a href="" class="btn btn-primary rounded-pill py-3 px-5">Saiba mais</a>
                             </div>
                         </div>
@@ -131,7 +134,8 @@
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
                 <div class="text-center p-4">
-                    <div class="d-inline-block border border-primary rounded-pill px-3 mb-3" data-price="10">$11 - $99</div>
+                    <div class="d-inline-block border border-primary rounded-pill px-3 mb-3" data-price="10">$20
+                    </div>
                     <h3 class="mb-3" data-name="Rosca gorda">Rosca gorda</h3>
                     <span>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</span>
                 </div>
@@ -147,7 +151,7 @@
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
             <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
                 <div class="text-center p-4">
-                    <div class="d-inline-block border border-primary rounded-pill pt-1 px-3 mb-3" data-price="15">$11 - $99</div>
+                    <div class="d-inline-block border border-primary rounded-pill pt-1 px-3 mb-3" data-price="15">$15</div>
                     <h3 class="mb-3" data-name="Rosca branca">Rosca branca</h3>
                     <span>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</span>
                 </div>
@@ -163,7 +167,7 @@
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
                 <div class="text-center p-4">
-                    <div class="d-inline-block border border-primary rounded-pill pt-1 px-3 mb-3" data-price="20">$11 - $99</div>
+                    <div class="d-inline-block border border-primary rounded-pill pt-1 px-3 mb-3" data-price="20">$19</div>
                     <h3 class="mb-3" data-name="Rosca preta">Rosca preta</h3>
                     <span>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</span>
                 </div>
@@ -178,76 +182,33 @@
         </div>
     </div>
     <!-- Product End -->
-            
-            <div class="container">
-                <h2>Formulário Cliente</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="nome">Nome:</label>
-                        <input type="text" class="form-control" id="nome" name="nome" maxlength="45">
-                    </div>
-                    <div class="form-group">
-                        <label for="recorrente">Recorrente:</label>
-                        <select class="form-control" id="recorrente" name="recorrente">
-                            <option value="1">Sim</option>
-                            <option value="0">Não</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="telefone">Telefone:</label>
-                        <input type="number" class="form-control" id="telefone" name="telefone">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                    <a href="cliente.html" class="btn btn-secondary">Listar</a>
-                </form>
+    <br>
+    <div class="container pedidoForm">
+        <h2>Faça seu Pedido</h2>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" maxlength="45">
             </div>
-
-            <div class="container">
-                <h2>Formulário Pedido</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="numero">Número:</label>
-                        <input type="number" class="form-control" id="numero" name="numero">
-                    </div>
-                    <div class="form-group">
-                        <label for="status">Status:</label>
-                        <select class="form-control" id="status" name="status">
-                            <option value="0">Em análise</option>
-                            <option value="1">Em produção</option>
-                            <option value="2">Feito</option>
-                            <option value="3">Entregue</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                    <a href="pedido.html" class="btn btn-secondary">Listar</a>
-                </form>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="number" class="form-control" id="telefone" name="telefone">
             </div>
+            <br>
+            <button type="button" class="btn btn-primary pedidoForm" id="bt-client">Prosseguir</button>
+        </form>
+    </div>
 
-            <div class="container">
-                <h2>Formulário Item</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="idItem">ID do Item:</label>
-                        <input type="number" class="form-control" id="idItem" name="idItem">
-                    </div>
-                    <div class="form-group">
-                        <label for="preco">Preço:</label>
-                        <input type="number" step="0.01" class="form-control" id="preco" name="preco">
-                    </div>
-                    <div class="form-group">
-                        <label for="quantidade">Quantidade:</label>
-                        <input type="number" class="form-control" id="quantidade" name="quantidade">
-                    </div>
-                    <div class="form-group">
-                        <label for="unidade">Unidade:</label>
-                        <input type="text" class="form-control" id="unidade" name="unidade" maxlength="2">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                    <a href="item.html" class="btn btn-secondary">Listar</a>
-                </form>
-            </div>
 
-        </div>
+    </div>
+
+    </div>
+    </div>
+    <div class="container mt-5 pedidoForm2" id="pedidoForm2">
+
+    </div>
+    <div class="container mt-5 " id="tabelaPedido">
+        
     </div>
     <!-- Product End -->
 
@@ -269,9 +230,12 @@
                                 <span>Rosquinha</span>
                             </div>
                             <div class="team-social">
-                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i
+                                        class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -285,9 +249,12 @@
                                 <span>Matemágico</span>
                             </div>
                             <div class="team-social">
-                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i
+                                        class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -301,9 +268,12 @@
                                 <span>Cozinheiro</span>
                             </div>
                             <div class="team-social">
-                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i
+                                        class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -317,9 +287,12 @@
                                 <span>Foguinho</span>
                             </div>
                             <div class="team-social">
-                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href=""><i
+                                        class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -331,7 +304,8 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
@@ -345,13 +319,14 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 
     <script>
         // Função para adicionar item ao carrinho
         const cartItems = [];
         const cartDropdown = document.getElementById('cartDropdown');
         const cartMenu = document.querySelector('.dropdown-menu');
-        
+
         // Função para atualizar o menu do carrinho
         function updateCartMenu() {
             if (cartItems.length > 0) {

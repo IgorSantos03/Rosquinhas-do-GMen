@@ -2,14 +2,14 @@
 include ('../conexao.php');
 
 $edit = (isset($_POST["edit"]) ? $_POST["edit"] : "");
-$status = (isset($_POST["status"]) ? $_POST["status"] : "");
+$nome = (isset($_POST["nome"]) ? $_POST["nome"] : "");
 $numero = (isset($_POST["numero"]) ? $_POST["numero"] : "");
 $data = date('Y/m/d');
 
 if( $edit == 1 ){
-    $sql = "UPDATE `pedido` SET  `status` = '$status' WHERE `pedido`.`numero` = $numero;";
+    $sql = "UPDATE `pedido` SET  `nome` = '$nome' WHERE `pedido`.`numero` = $numero;";
 }else{
-    $sql = "INSERT INTO `pedido` VALUES ('$numero','$data' ,'$status');";
+    $sql = "INSERT INTO `pedido` VALUES ('$numero','$data','$nome');";
 }
 
 mysqli_query($conn1, $sql);
@@ -17,7 +17,7 @@ mysqli_query($conn1, $sql);
 $mensagem = $sql;
 
 echo json_encode(
-    ["mensagem" => $mensagem]
+    ["id" => $numero]
 );
 
 // 
